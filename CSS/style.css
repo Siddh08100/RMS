@@ -1,0 +1,89 @@
+.bor {
+  border: 1px solid black;
+}
+
+
+
+.logoImage {
+  height: 5rem;
+}
+
+.logoText {
+  color: rgb(47, 139, 201);
+}
+
+
+
+@media (min-width: 992px) {
+
+  .loginLeftSide {
+    height: 100vh;
+    background: url("../images/dominos_background.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .loginRightSide {
+    background-color: rgb(178, 224, 238);
+  }
+
+  form i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  form i img {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .loginRightSide {
+    position: relative;
+    z-index: 1;
+  }
+
+  .loginRightSide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5rem;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/dominos_background.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  .loginRightSide * {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+  }
+
+  .form-group i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .input{
+    border: 1px solid black;
+  }
+
+}
+
+.forgotPasswordText{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.forgotPasswordBackLinkText{
+  text-decoration: none;
+}
+
