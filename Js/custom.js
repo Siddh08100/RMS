@@ -20,8 +20,40 @@ function validateEmailInput() {
   }
 
   function Try(){
-    console.togglePassword = document.getElementById('togglePassword')
+    const togglePassword = document.getElementById('togglePassword')
     const password = document.getElementById('password')
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    console.log(togglePassword);
+    console.log(password);
+    
+    if(type === 'password'){
+        togglePassword.setAttribute('class','fa fa-eye-slash')
+    }else{
+        togglePassword.setAttribute('class','fa fa-eye')
+    }
+
+    password.setAttribute('type', type);
+
+  }
+
+  function newPassword(){
+    const togglePassword = document.getElementById('newPasswordToggle')
+    const password = document.getElementById('newPassword')
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+
+    if(type === 'password'){
+        togglePassword.setAttribute('class','fa fa-eye-slash')
+    }else{
+        togglePassword.setAttribute('class','fa fa-eye')
+    }
+
+    password.setAttribute('type', type);
+
+  }
+  
+  function confirmNewPassword(){
+    const togglePassword = document.getElementById('confirmNewPasswordToggle')
+    const password = document.getElementById('confirmNewPassword')
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
 
     if(type === 'password'){

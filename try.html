@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s ease;
+            z-index: 1000; /* Ensure sidebar is above content */
+        }
+        .sidebar.hide {
+            transform: translateX(-250px);
+        }
+        .navbar {
+            background-color: #87CEEB; /* Light blue */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1100; /* Ensure navbar is above sidebar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .navbar-brand {
+            display: none; /* Hide brand in navbar by default */
+        }
+        .navbar .user-photo {
+            margin-left: auto; /* Push user photo to the right */
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: margin-left 0.3s ease;
+            padding-top: 70px; /* Add padding to account for fixed navbar */
+            width: calc(100% - 250px); /* Ensure content does not overflow */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+        .content.expand {
+            margin-left: 0;
+            width: 100%; /* Full width when sidebar is hidden */
+        }
+        @media (max-width: 992px) {
+            .sidebar {
+                transform: translateX(-250px);
+            }
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            .content {
+                margin-left: 0;
+                width: 100%; /* Full width on smaller screens */
+            }
+            .navbar .navbar-brand {
+                display: block; /* Show brand in navbar on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="brand p-3">
+            <h3>Brand Logo</h3>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                    <span>🏠</span> Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                    <span>📊</span> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                    <span>📁</span> Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">
+                    <span>📅</span> Calendar
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar-brand d-lg-none">Brand Logo</div>
+        <button class="btn btn-primary d-lg-none" id="toggleSidebar">
+            <span>☰</span> Menu
+        </button>
+        <div class="user-photo">
+            <img src="user-photo.jpg" alt="User Photo" class="rounded-circle" width="40" height="40">
+        </div>
+    </nav>
+
+    <div class="content" id="content">
+        <h1>Welcome to the Dashboard</h1>
+        <p>This is the main content area.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            sidebar.classList.toggle('show');
+            content.classList.toggle('expand');
+        });
+
+        // Automatically show sidebar on larger screens
+        window.addEventListener('resize', function() {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            if (window.innerWidth >= 992) {
+                sidebar.classList.remove('show');
+                content.classList.remove('expand');
+            }
+        });
+    </script>
+</body>
+</html>
