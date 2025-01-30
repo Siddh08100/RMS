@@ -1,0 +1,331 @@
+<div class="row">
+  <div class="row">
+    <div class="col-12">
+      <div class="row mt-3">
+        <h2 class="pageHeading">Menu</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="ms-2 mb-5 mt-3 card border shadow-lg row">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          <i class="fa fa-list" aria-hidden="true"></i>
+          <span>Items</span>
+        </button>
+        <button
+          class="nav-link"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          <i class="fa fa-th-large" aria-hidden="true"></i>
+          <span>Modifiers</span>
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <!-- Items -->
+
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+      >
+        <div class="d-flex row mt-2 align-items-start">
+          <div
+            class="nav flex-column sub-sidebar col-xxl-3 col-xl-4 col-md-6 nav-links"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <!-- Add Modal -->
+            <div class="row p-3">
+              <div class="col-7">
+                <h4 class="pageHeading">Category</h4>
+              </div>
+              <div class="col-5 d-flex justify-content-end pt-1">
+                <i class="fa fa-plus-square-o fs-3" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <!-- Sandwich -->
+            <button
+              class="nav-link active d-flex justify-content-start p-4 align-content-start"
+              id="sandwich-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#sandwich"
+              type="button"
+              role="tab"
+              aria-controls="sandwich"
+              aria-selected="true"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Sandwich</span>
+            </button>
+            
+
+            <!-- pasta -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="pasta-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pasta"
+              type="button"
+              role="tab"
+              aria-controls="pasta"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Pasta</span>
+            </button>
+
+            <!-- Sides and Appetizers -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="sidesAndAppetizers-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#sidesAndAppetizers"
+              type="button"
+              role="tab"
+              aria-controls="sidesAndAppetizers"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Sides and Appetizers</span>
+            </button>
+
+            <!-- Salads -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="salads-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#salads"
+              type="button"
+              role="tab"
+              aria-controls="salads"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Salads</span>
+            </button>
+
+            <!-- Dips and Sauces -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="salads-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dipsAndSauces"
+              type="button"
+              role="tab"
+              aria-controls="dipsAndSauces"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Dips and Sauces</span>
+            </button>
+
+            <!-- pizza -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="pizza-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pizza"
+              type="button"
+              role="tab"
+              aria-controls="pizza"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">pizza</span>
+            </button>
+
+            <!-- Dessert -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="dessert-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dessert"
+              type="button"
+              role="tab"
+              aria-controls="dessert"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Dessert</span>
+            </button>
+
+            <!-- Burger -->
+            <button
+              class="nav-link d-flex justify-content-start p-4 align-content-start"
+              id="burger-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#burger"
+              type="button"
+              role="tab"
+              aria-controls="burger"
+              aria-selected="false"
+            >
+              <i class="fa fa-th pt-2" aria-hidden="true"></i>
+              <span class="text-center ps-2 pt-0">Burger</span>
+            </button>
+          </div>
+          <div
+            class="tab-content col-xxl-9 col-xl-8 col-md"
+            id="v-pills-tabContent"
+          >
+            <!-- Sandwich Content -->
+            <div
+              class="tab-pane fade show active"
+              id="sandwich"
+              role="tabpanel"
+              aria-labelledby="sandwich-tab"
+            >
+              Sandwich
+            </div>
+
+            <!-- pasta Content -->
+            <div
+              class="tab-pane fade"
+              id="pasta"
+              role="tabpanel"
+              aria-labelledby="pasta-tab"
+            >
+              pasta
+            </div>
+
+            <!-- Sides and Appetizers Content -->
+            <div
+              class="tab-pane fade"
+              id="sidesAndAppetizers"
+              role="tabpanel"
+              aria-labelledby="sidesAndAppetizers-tab"
+            >
+              Sides and Appetizers
+            </div>
+
+            <!-- Salads Content -->
+            <div
+              class="tab-pane fade"
+              id="salads"
+              role="tabpanel"
+              aria-labelledby="salads-tab"
+            >
+              salads
+            </div>
+
+            <!-- Dips and Sauces Content -->
+            <div
+              class="tab-pane fade"
+              id="dipsAndSauces"
+              role="tabpanel"
+              aria-labelledby="dipsAndSauces-tab"
+            >
+              Dips and Sauces
+            </div>
+
+            <!-- pizza content -->
+            <div
+              class="tab-pane fade"
+              id="pizza"
+              role="tabpanel"
+              aria-labelledby="pizza-tab"
+            >
+              Pizza
+            </div>
+
+            <!-- Dessert content -->
+            <div
+              class="tab-pane fade"
+              id="dessert"
+              role="tabpanel"
+              aria-labelledby="dessert-tab"
+            >
+              Dessert
+            </div>
+
+            <!-- Burger content -->
+            <div
+              class="tab-pane fade"
+              id="burger"
+              role="tabpanel"
+              aria-labelledby="burger-tab"
+            >
+              Burger
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modifiers -->
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Confirmation</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row d-flex justify-content-center">
+          <img
+            src="images/toppng.com-warning-icon-2400x2400.png"
+            alt="not found"
+            style="height: 4rem; width: 5rem"
+            class="img-fluid"
+          />
+        </div>
+        <div class="row">
+          <h4>Are you sure you want to delete this user ?</h4>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-primary">YES</button>
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          data-bs-dismiss="modal"
+        >
+          NO
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

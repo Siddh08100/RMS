@@ -19,6 +19,28 @@
   font-weight: bold;
 }
 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: darkcyan;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 red #fff ;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: darkcyan;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 red #fff ;
+}
+
+.nav-link{
+  color: black;
+  font-size: large;
+}
+
+.sub-sidebar{
+  color: black;
+  font-size: large;
+}
+
 .search_button {
   position: absolute;
   top: 12px;
@@ -112,7 +134,7 @@
     right: 1rem;
   }
 
-  .input {
+  input {
     border: 1px solid black;
   }
 }
@@ -125,7 +147,6 @@
   text-decoration: none;
 }
 
-/* floating label */
 
 input.inputClass:focus {
   box-shadow: none;
@@ -143,3 +164,82 @@ select.inputClass:focus {
   text-decoration: none;
 }
 
+
+.input-file {
+  display: none;
+}
+.labelfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  color: #404040;
+  cursor: pointer;
+}
+
+.form-floating>label {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  height: 100%;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 30px 0px;
+  transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.MainContent{
+  background-color: #f5f2f2;
+}
+
+
+.form-floating>.borderLabel{
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  height: 100%;
+  font-weight: bold;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 20px -110px;
+  transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.form-floating>input:focus{
+  box-shadow: none;
+}
+
+.pencilSymbol, .pencilSymbol:hover{
+  text-decoration: none;
+  color: black;
+}
+
+
+.row > .nav-link:focus, .nav-link:hover, .nav-link.active {
+  color: darkcyan;
+}
+
+.editDeleteBtn{
+  display: none;  
+}
+.category-btn:hover>.editDeleteBtn{
+  display: block;
+}
+
+.nav-link{
+  border: 2px solid white;
+  background-color: white;
+}
+
+.sub-sidebar{
+  border-right:2px solid darkcyan ;
+}
+
+.subMenu:active{
+  background-color: red;
+}
