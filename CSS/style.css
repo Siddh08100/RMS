@@ -25,10 +25,8 @@
   border-color: #dee2e6 #dee2e6 red #fff ;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: darkcyan;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 red #fff ;
+.Tabs_text{
+  font-size: medium;
 }
 
 .nav-link{
@@ -65,7 +63,7 @@
   }
 
   .DashBoardlogoImage {
-    height: 5rem;
+    height: 4rem;
   }
 
   .loginRightSide {
@@ -83,7 +81,6 @@
   }
 
 
-
   form i img {
     position: absolute;
     top: 0rem;
@@ -91,10 +88,24 @@
   }
 }
 
+/* .editDeleteIcon{
+  display: none;
+} */
+
+div .editDeleteIcon:hover{
+  display: block;
+}
+
+
+
 @media (max-width: 991px) {
   .loginRightSide {
     position: relative;
     z-index: 1;
+  }
+
+  .DashBoardlogoImage{
+    height: 4rem;
   }
 
   .addUserForm {
@@ -243,3 +254,5 @@ select.inputClass:focus {
 .subMenu:active{
   background-color: red;
 }
+
+

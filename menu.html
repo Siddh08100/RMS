@@ -21,7 +21,7 @@
           aria-selected="true"
         >
           <i class="fa fa-list" aria-hidden="true"></i>
-          <span>Items</span>
+          <span class="Tabs_text">Items</span>
         </button>
         <button
           class="nav-link"
@@ -34,7 +34,7 @@
           aria-selected="false"
         >
           <i class="fa fa-th-large" aria-hidden="true"></i>
-          <span>Modifiers</span>
+          <span class="Tabs_text">Modifiers</span>
         </button>
       </div>
     </nav>
@@ -64,11 +64,9 @@
               </div>
             </div>
 
-            
-
             <!-- Sandwich -->
             <button
-              class="nav-link active d-flex justify-content-start p-4 align-content-start"
+              class="nav-link active d-flex justify-content-start align-content-start"
               id="sandwich-tab"
               data-bs-toggle="pill"
               data-bs-target="#sandwich"
@@ -79,6 +77,10 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">Sandwich</span>
+              <div class="ms-auto editDeleteIcon">
+                <i class="fa fa-pencil " aria-hidden="true"></i>
+                <i class="fa fa-trash-o " data-bs-toggle="modal" data-bs-target="#exampleModal" class="ms-2 dustbin" aria-hidden="true"></i>
+              </div>
             </button>
 
             <!-- pasta -->
@@ -94,11 +96,12 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">Pasta</span>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
 
             <!-- Sides and Appetizers -->
             <button
-              class="nav-link d-flex p-4"
+              class="nav-link d-flex p-4 truall"
               id="sidesAndAppetizers-tab"
               data-bs-toggle="pill"
               data-bs-target="#sidesAndAppetizers"
@@ -109,14 +112,10 @@
             >
               <div class="float-left">
                 <i class="fa fa-th pt-2" aria-hidden="true"></i>
-                <span class="text-center ps-2 pt-0">Sides and Appetizers</span>
+                <span class="text-center ps-1 pt-0">Sides and Appetizers</span>
               </div>
-              <div class="bor d-block ps-5">
-                <i class="fa fa-pencil"></i>&nbsp;&nbsp;
-                <i class="fa fa-trash-o"></i>
-              </div>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
-
 
             <!-- Salads -->
             <button
@@ -131,6 +130,7 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">Salads</span>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
 
             <!-- Dips and Sauces -->
@@ -146,6 +146,7 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">Dips and Sauces</span>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
 
             <!-- pizza -->
@@ -161,6 +162,7 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">pizza</span>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
 
             <!-- Dessert -->
@@ -176,6 +178,7 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">Dessert</span>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
 
             <!-- Burger -->
@@ -191,6 +194,7 @@
             >
               <i class="fa fa-th pt-2" aria-hidden="true"></i>
               <span class="text-center ps-2 pt-0">Burger</span>
+              <i class="fa fa-pencil ms-auto pencil-icon" aria-hidden="true"></i>
             </button>
           </div>
           <div
