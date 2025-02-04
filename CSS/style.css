@@ -235,11 +235,14 @@ select.inputClass:focus {
   color: darkcyan;
 }
 
-.editDeleteBtn{
-  display: none;  
-}
-.category-btn:hover>.editDeleteBtn{
+.row > .nav-link:focus, .nav-link:hover, .nav-link.active , .rrr {
   display: block;
+}
+
+
+
+.row > .nav-link:hover > .poenn{
+  color: red;
 }
 
 .nav-link{
@@ -255,4 +258,8 @@ select.inputClass:focus {
   background-color: red;
 }
 
+
+.triala:hover > .editDeleteIcon{
+  display: none;
+}
 
